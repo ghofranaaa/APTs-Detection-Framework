@@ -5,13 +5,13 @@
 This project presents a practical APT detection framework focused on identifying behaviors associated with APT28 and APT33. Adversary activity is simulated in a controlled lab, Windows telemetry is centrally collected, and observed techniques are translated into MITRE ATT&CK–aligned Sigma detections using the Elastic (ELK) stack.
 
 
----
+
 
 ## Goal
 
 The objective of this project is to build and validate a controlled detection environment capable of simulating advanced adversary behavior and converting observed endpoint activity into reliable, behavior-based detections. The project emphasizes visibility assessment, technique-to-detection mapping, and the development of high-confidence detection logic while documenting coverage and limitations.
 
----
+
 
 ## Architecture
 
@@ -28,7 +28,7 @@ The lab architecture follows a classic **attacker → target → SIEM** flow.
 
 > 📌 A visual architecture diagram will be created using Lucidchart and embedded directly in this README.
 
----
+
 
 ## Threat Groups Analyzed
 
@@ -57,7 +57,7 @@ The group is known for:
 
 APT33 provides a complementary detection surface focused on **execution and discovery tactics**.
 
----
+
 
 ## Technologies Used
 
@@ -76,7 +76,7 @@ APT33 provides a complementary detection surface focused on **execution and disc
 | VirtualBox          | Virtualization platform                          |
 | Ubuntu              | Host operating system                            |
 
----
+
 
 ## Project Structure
 
@@ -88,7 +88,6 @@ APT33 provides a complementary detection surface focused on **execution and disc
 └── README.md          # Project documentation
 ```
 
----
 
 ## Getting Started – Installation & Configuration (High Level)
 
@@ -116,7 +115,7 @@ APT33 provides a complementary detection surface focused on **execution and disc
 * Configure Evil-WinRM for remote access
 * Prepare Atomic Red Team scripts for TTP simulation
 
----
+
 
 ## Testing & Detection Procedure
 
@@ -155,7 +154,7 @@ evil-winrm -i <windows_ip> -u <username> -p <password>
   * Logs generated
   * Detection logic
 
----
+
 
 ## Outcomes
 
@@ -163,19 +162,19 @@ evil-winrm -i <windows_ip> -u <username> -p <password>
 * MITRE-aligned detection rules
 * Clear visibility into attacker behavior on Windows endpoints
 
----
+
 
 ## Results & Findings
 
 > *To be completed after full testing and rule validation.*
 
----
+
 
 ## Future Enhancements
 
 > *To be completed in later project phases.*
 
----
+
 
 ## Disclaimer
 
