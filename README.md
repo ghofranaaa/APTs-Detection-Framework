@@ -26,7 +26,7 @@ The lab architecture follows a classic **attacker → target → SIEM** flow.
 * Elasticsearch stores and indexes telemetry
 * Kibana is used for investigation, visualization, and detection validation
 
-> 📌 A visual architecture diagram will be created using Lucidchart and embedded directly in this README.
+![APT Detection Framework Architecture](./apt-detection-framework-architecture.png)
 
 
 
@@ -84,7 +84,7 @@ APT33 provides a complementary detection surface focused on **execution and disc
 .
 ├── SigmaRules/        # Sigma YAML detection rules
 ├── Logs/              # Attack simulation logs
-├── Reports/           # Detection reports per technique (PDF/Markdown)
+├── Reports/           # Detection reports per technique
 └── README.md          # Project documentation
 ```
 
