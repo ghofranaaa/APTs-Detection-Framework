@@ -26,7 +26,7 @@ The lab architecture follows a classic **attacker → target → SIEM** flow.
 * Elasticsearch stores and indexes telemetry
 * Kibana is used for investigation, visualization, and detection validation
 
-![APT Detection Framework Architecture](./apt-detection-framework-architecture.png)
+![APT Detection Framework Architecture](./apt-detection-framework-architecture.svg)
 
 
 
