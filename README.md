@@ -83,6 +83,7 @@ APT33 provides a complementary detection surface focused on **execution and disc
 ```text
 .
 ├── SigmaRules/        # Sigma YAML detection rules
+├── Mitre Attack/      # JSON mapping
 ├── Logs/              # Attack simulation logs
 ├── Reports/           # Detection reports per technique
 └── README.md          # Project documentation
