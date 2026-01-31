@@ -1,0 +1,185 @@
+{
+  "@timestamp": [
+    "2026-01-30T18:08:20.776Z"
+  ],
+  "agent.ephemeral_id": [
+    "a4610d7c-f586-4ced-aae7-a4b9576712f0"
+  ],
+  "agent.hostname": [
+    "DESKTOP-K1Q1TJA"
+  ],
+  "agent.id": [
+    "512c112d-258f-4727-8888-40932f893567"
+  ],
+  "agent.name": [
+    "DESKTOP-K1Q1TJA"
+  ],
+  "agent.type": [
+    "winlogbeat"
+  ],
+  "agent.version": [
+    "9.2.3"
+  ],
+  "ecs.version": [
+    "8.17.0"
+  ],
+  "event.action": [
+    "Process terminated"
+  ],
+  "event.category": [
+    "process"
+  ],
+  "event.code": [
+    "5"
+  ],
+  "event.created": [
+    "2026-01-30T18:08:22.026Z"
+  ],
+  "event.ingested": [
+    "2026-01-30T18:08:28.132Z"
+  ],
+  "event.kind": [
+    "event"
+  ],
+  "event.module": [
+    "sysmon"
+  ],
+  "event.provider": [
+    "Microsoft-Windows-Sysmon"
+  ],
+  "event.type": [
+    "end"
+  ],
+  "host.architecture": [
+    "x86_64"
+  ],
+  "host.hostname": [
+    "DESKTOP-K1Q1TJA"
+  ],
+  "host.id": [
+    "0ac304ca-bfd2-429e-ac83-581c50bd0b8a"
+  ],
+  "host.ip": [
+    "2c0f:f290:3002:1ac9:9517:7e83:ad54:be60",
+    "2c0f:f290:3002:1ac9:6057:448e:c3fa:e42",
+    "fe80::4243:cfcf:9490:30b1",
+    "172.20.10.4"
+  ],
+  "host.mac": [
+    "08-00-27-C1-A5-1D"
+  ],
+  "host.name": [
+    "desktop-k1q1tja"
+  ],
+  "host.os.build": [
+    "19045.6466"
+  ],
+  "host.os.family": [
+    "windows"
+  ],
+  "host.os.kernel": [
+    "10.0.19041.6456 (WinBuild.160101.0800)"
+  ],
+  "host.os.name": [
+    "Windows 10 Home"
+  ],
+  "host.os.name.text": [
+    "Windows 10 Home"
+  ],
+  "host.os.platform": [
+    "windows"
+  ],
+  "host.os.type": [
+    "windows"
+  ],
+  "host.os.version": [
+    "10.0"
+  ],
+  "log.level": [
+    "information"
+  ],
+  "message": [
+    "Process terminated:\nRuleName: -\nUtcTime: 2026-01-30 18:08:20.776\nProcessGuid: {0AC304CA-F38E-697C-A501-000000002A00}\nProcessId: 5788\nImage: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\nUser: DESKTOP-K1Q1TJA\\Administrator"
+  ],
+  "process.entity_id": [
+    "{0AC304CA-F38E-697C-A501-000000002A00}"
+  ],
+  "process.executable": [
+    "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+  ],
+  "process.executable.text": [
+    "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+  ],
+  "process.name": [
+    "powershell.exe"
+  ],
+  "process.name.text": [
+    "powershell.exe"
+  ],
+  "process.pid": [
+    5788
+  ],
+  "related.user": [
+    "Administrator"
+  ],
+  "user.domain": [
+    "DESKTOP-K1Q1TJA"
+  ],
+  "user.id": [
+    "S-1-5-18"
+  ],
+  "user.name": [
+    "Administrator"
+  ],
+  "user.name.text": [
+    "Administrator"
+  ],
+  "winlog.channel": [
+    "Microsoft-Windows-Sysmon/Operational"
+  ],
+  "winlog.computer_name": [
+    "DESKTOP-K1Q1TJA"
+  ],
+  "winlog.event_id": [
+    "5"
+  ],
+  "winlog.opcode": [
+    "Info"
+  ],
+  "winlog.process.pid": [
+    2700
+  ],
+  "winlog.process.thread.id": [
+    3932
+  ],
+  "winlog.provider_guid": [
+    "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}"
+  ],
+  "winlog.provider_name": [
+    "Microsoft-Windows-Sysmon"
+  ],
+  "winlog.record_id": [
+    "29568"
+  ],
+  "winlog.task": [
+    "Process terminated (rule: ProcessTerminate)"
+  ],
+  "winlog.user.domain": [
+    "NT AUTHORITY"
+  ],
+  "winlog.user.identifier": [
+    "S-1-5-18"
+  ],
+  "winlog.user.name": [
+    "SYSTEM"
+  ],
+  "winlog.user.type": [
+    "User"
+  ],
+  "winlog.version": [
+    3
+  ],
+  "_id": "epgXEJwBeTh8ZOEembDl",
+  "_index": ".ds-winlogbeat-9.2.3-2026.01.19-000001",
+  "_score": null
+}

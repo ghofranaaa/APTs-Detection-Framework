@@ -1,0 +1,301 @@
+{
+  "@timestamp": [
+    "2026-01-26T00:00:20.427Z"
+  ],
+  "agent.ephemeral_id": [
+    "963e2aab-5709-4194-89fc-8d2939e07162"
+  ],
+  "agent.hostname": [
+    "DESKTOP-K1Q1TJA"
+  ],
+  "agent.id": [
+    "512c112d-258f-4727-8888-40932f893567"
+  ],
+  "agent.name": [
+    "DESKTOP-K1Q1TJA"
+  ],
+  "agent.type": [
+    "winlogbeat"
+  ],
+  "agent.version": [
+    "9.2.3"
+  ],
+  "ecs.version": [
+    "8.17.0"
+  ],
+  "event.action": [
+    "Process creation"
+  ],
+  "event.category": [
+    "process"
+  ],
+  "event.code": [
+    "1"
+  ],
+  "event.created": [
+    "2026-01-26T00:00:21.227Z"
+  ],
+  "event.ingested": [
+    "2026-01-26T00:00:31.182Z"
+  ],
+  "event.kind": [
+    "event"
+  ],
+  "event.module": [
+    "sysmon"
+  ],
+  "event.provider": [
+    "Microsoft-Windows-Sysmon"
+  ],
+  "event.type": [
+    "start"
+  ],
+  "host.architecture": [
+    "x86_64"
+  ],
+  "host.hostname": [
+    "DESKTOP-K1Q1TJA"
+  ],
+  "host.id": [
+    "0ac304ca-bfd2-429e-ac83-581c50bd0b8a"
+  ],
+  "host.ip": [
+    "2c0f:f290:3040:ea37:9ce8:544b:2cd4:4d4c",
+    "2c0f:f290:3040:ea37:651d:af48:fcbf:41a4",
+    "fe80::4243:cfcf:9490:30b1",
+    "172.20.10.4"
+  ],
+  "host.mac": [
+    "08-00-27-C1-A5-1D"
+  ],
+  "host.name": [
+    "desktop-k1q1tja"
+  ],
+  "host.os.build": [
+    "19045.6466"
+  ],
+  "host.os.family": [
+    "windows"
+  ],
+  "host.os.kernel": [
+    "10.0.19041.6456 (WinBuild.160101.0800)"
+  ],
+  "host.os.name": [
+    "Windows 10 Home"
+  ],
+  "host.os.name.text": [
+    "Windows 10 Home"
+  ],
+  "host.os.platform": [
+    "windows"
+  ],
+  "host.os.type": [
+    "windows"
+  ],
+  "host.os.version": [
+    "10.0"
+  ],
+  "log.level": [
+    "information"
+  ],
+  "message": [
+    "Process Create:\nRuleName: -\nUtcTime: 2026-01-26 00:00:20.427\nProcessGuid: {0AC304CA-AE94-6976-5602-000000001A00}\nProcessId: 7960\nImage: C:\\Windows\\System32\\reg.exe\nFileVersion: 10.0.19041.1 (WinBuild.160101.0800)\nDescription: Registry Console Tool\nProduct: Microsoft® Windows® Operating System\nCompany: Microsoft Corporation\nOriginalFileName: reg.exe\nCommandLine: reg  add HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced /t REG_DWORD /v HideFileExt /d 1 /f\nCurrentDirectory: C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\\nUser: DESKTOP-K1Q1TJA\\Administrator\nLogonGuid: {0AC304CA-914F-6976-55D6-1B0000000000}\nLogonId: 0x1bd655\nTerminalSessionId: 0\nIntegrityLevel: High\nHashes: SHA256=C0E25B1F9B22DE445298C1E96DDFCEAD265CA030FA6626F61A4A4786CC4A3B7D\nParentProcessGuid: {0AC304CA-AE94-6976-5402-000000001A00}\nParentProcessId: 7176\nParentImage: C:\\Windows\\System32\\cmd.exe\nParentCommandLine: \"cmd.exe\" /c reg add HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced /t REG_DWORD /v HideFileExt /d 1 /f\nParentUser: DESKTOP-K1Q1TJA\\Administrator"
+  ],
+  "process.args": [
+    "reg",
+    "add",
+    "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+    "/t",
+    "REG_DWORD",
+    "/v",
+    "HideFileExt",
+    "/d",
+    "1",
+    "/f"
+  ],
+  "process.args_count": [
+    10
+  ],
+  "process.command_line": [
+    "reg  add HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced /t REG_DWORD /v HideFileExt /d 1 /f"
+  ],
+  "process.command_line.text": [
+    "reg  add HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced /t REG_DWORD /v HideFileExt /d 1 /f"
+  ],
+  "process.entity_id": [
+    "{0AC304CA-AE94-6976-5602-000000001A00}"
+  ],
+  "process.executable": [
+    "C:\\Windows\\System32\\reg.exe"
+  ],
+  "process.executable.text": [
+    "C:\\Windows\\System32\\reg.exe"
+  ],
+  "process.hash.sha256": [
+    "c0e25b1f9b22de445298c1e96ddfcead265ca030fa6626f61a4a4786cc4a3b7d"
+  ],
+  "process.name": [
+    "reg.exe"
+  ],
+  "process.name.text": [
+    "reg.exe"
+  ],
+  "process.parent.args": [
+    "cmd.exe",
+    "/c",
+    "reg",
+    "add",
+    "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced",
+    "/t",
+    "REG_DWORD",
+    "/v",
+    "HideFileExt",
+    "/d",
+    "1",
+    "/f"
+  ],
+  "process.parent.args_count": [
+    12
+  ],
+  "process.parent.command_line": [
+    "\"cmd.exe\" /c reg add HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced /t REG_DWORD /v HideFileExt /d 1 /f"
+  ],
+  "process.parent.command_line.text": [
+    "\"cmd.exe\" /c reg add HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced /t REG_DWORD /v HideFileExt /d 1 /f"
+  ],
+  "process.parent.entity_id": [
+    "{0AC304CA-AE94-6976-5402-000000001A00}"
+  ],
+  "process.parent.executable": [
+    "C:\\Windows\\System32\\cmd.exe"
+  ],
+  "process.parent.executable.text": [
+    "C:\\Windows\\System32\\cmd.exe"
+  ],
+  "process.parent.name": [
+    "cmd.exe"
+  ],
+  "process.parent.name.text": [
+    "cmd.exe"
+  ],
+  "process.parent.pid": [
+    7176
+  ],
+  "process.pe.company": [
+    "Microsoft Corporation"
+  ],
+  "process.pe.description": [
+    "Registry Console Tool"
+  ],
+  "process.pe.file_version": [
+    "10.0.19041.1 (WinBuild.160101.0800)"
+  ],
+  "process.pe.original_file_name": [
+    "reg.exe"
+  ],
+  "process.pe.product": [
+    "Microsoft® Windows® Operating System"
+  ],
+  "process.pid": [
+    7960
+  ],
+  "process.working_directory": [
+    "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\"
+  ],
+  "process.working_directory.text": [
+    "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\"
+  ],
+  "related.hash": [
+    "c0e25b1f9b22de445298c1e96ddfcead265ca030fa6626f61a4a4786cc4a3b7d"
+  ],
+  "related.user": [
+    "Administrator"
+  ],
+  "user.domain": [
+    "DESKTOP-K1Q1TJA"
+  ],
+  "user.id": [
+    "S-1-5-18"
+  ],
+  "user.name": [
+    "Administrator"
+  ],
+  "user.name.text": [
+    "Administrator"
+  ],
+  "winlog.channel": [
+    "Microsoft-Windows-Sysmon/Operational"
+  ],
+  "winlog.computer_name": [
+    "DESKTOP-K1Q1TJA"
+  ],
+  "winlog.event_data.Company": [
+    "Microsoft Corporation"
+  ],
+  "winlog.event_data.Description": [
+    "Registry Console Tool"
+  ],
+  "winlog.event_data.FileVersion": [
+    "10.0.19041.1 (WinBuild.160101.0800)"
+  ],
+  "winlog.event_data.IntegrityLevel": [
+    "High"
+  ],
+  "winlog.event_data.LogonGuid": [
+    "{0AC304CA-914F-6976-55D6-1B0000000000}"
+  ],
+  "winlog.event_data.LogonId": [
+    "0x1bd655"
+  ],
+  "winlog.event_data.ParentUser": [
+    "DESKTOP-K1Q1TJA\\Administrator"
+  ],
+  "winlog.event_data.Product": [
+    "Microsoft® Windows® Operating System"
+  ],
+  "winlog.event_data.TerminalSessionId": [
+    "0"
+  ],
+  "winlog.event_id": [
+    "1"
+  ],
+  "winlog.opcode": [
+    "Info"
+  ],
+  "winlog.process.pid": [
+    1172
+  ],
+  "winlog.process.thread.id": [
+    2824
+  ],
+  "winlog.provider_guid": [
+    "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}"
+  ],
+  "winlog.provider_name": [
+    "Microsoft-Windows-Sysmon"
+  ],
+  "winlog.record_id": [
+    "20238"
+  ],
+  "winlog.task": [
+    "Process Create (rule: ProcessCreate)"
+  ],
+  "winlog.user.domain": [
+    "NT AUTHORITY"
+  ],
+  "winlog.user.identifier": [
+    "S-1-5-18"
+  ],
+  "winlog.user.name": [
+    "SYSTEM"
+  ],
+  "winlog.user.type": [
+    "User"
+  ],
+  "winlog.version": [
+    5
+  ],
+  "_id": "qVya95sBjf6dOK1UHXPP",
+  "_index": ".ds-winlogbeat-9.2.3-2026.01.19-000001",
+  "_score": null
+}

@@ -1,0 +1,293 @@
+{
+  "@timestamp": [
+    "2026-01-25T22:23:13.803Z"
+  ],
+  "agent.ephemeral_id": [
+    "963e2aab-5709-4194-89fc-8d2939e07162"
+  ],
+  "agent.hostname": [
+    "DESKTOP-K1Q1TJA"
+  ],
+  "agent.id": [
+    "512c112d-258f-4727-8888-40932f893567"
+  ],
+  "agent.name": [
+    "DESKTOP-K1Q1TJA"
+  ],
+  "agent.type": [
+    "winlogbeat"
+  ],
+  "agent.version": [
+    "9.2.3"
+  ],
+  "ecs.version": [
+    "8.17.0"
+  ],
+  "event.action": [
+    "Process creation"
+  ],
+  "event.category": [
+    "process"
+  ],
+  "event.code": [
+    "1"
+  ],
+  "event.created": [
+    "2026-01-25T22:23:15.498Z"
+  ],
+  "event.ingested": [
+    "2026-01-25T22:23:24.528Z"
+  ],
+  "event.kind": [
+    "event"
+  ],
+  "event.module": [
+    "sysmon"
+  ],
+  "event.provider": [
+    "Microsoft-Windows-Sysmon"
+  ],
+  "event.type": [
+    "start"
+  ],
+  "host.architecture": [
+    "x86_64"
+  ],
+  "host.hostname": [
+    "DESKTOP-K1Q1TJA"
+  ],
+  "host.id": [
+    "0ac304ca-bfd2-429e-ac83-581c50bd0b8a"
+  ],
+  "host.ip": [
+    "2c0f:f290:3040:ea37:9ce8:544b:2cd4:4d4c",
+    "2c0f:f290:3040:ea37:651d:af48:fcbf:41a4",
+    "fe80::4243:cfcf:9490:30b1",
+    "172.20.10.4"
+  ],
+  "host.mac": [
+    "08-00-27-C1-A5-1D"
+  ],
+  "host.name": [
+    "desktop-k1q1tja"
+  ],
+  "host.os.build": [
+    "19045.6466"
+  ],
+  "host.os.family": [
+    "windows"
+  ],
+  "host.os.kernel": [
+    "10.0.19041.6456 (WinBuild.160101.0800)"
+  ],
+  "host.os.name": [
+    "Windows 10 Home"
+  ],
+  "host.os.name.text": [
+    "Windows 10 Home"
+  ],
+  "host.os.platform": [
+    "windows"
+  ],
+  "host.os.type": [
+    "windows"
+  ],
+  "host.os.version": [
+    "10.0"
+  ],
+  "log.level": [
+    "information"
+  ],
+  "message": [
+    "Process Create:\nRuleName: -\nUtcTime: 2026-01-25 22:23:13.803\nProcessGuid: {0AC304CA-97D1-6976-9401-000000001A00}\nProcessId: 4764\nImage: C:\\Windows\\System32\\netsh.exe\nFileVersion: 10.0.19041.1 (WinBuild.160101.0800)\nDescription: Network Command Shell\nProduct: Microsoft® Windows® Operating System\nCompany: Microsoft Corporation\nOriginalFileName: netsh.exe\nCommandLine: netsh  wlan show profile * key=clear\nCurrentDirectory: C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\\nUser: DESKTOP-K1Q1TJA\\Administrator\nLogonGuid: {0AC304CA-914F-6976-55D6-1B0000000000}\nLogonId: 0x1bd655\nTerminalSessionId: 0\nIntegrityLevel: High\nHashes: SHA256=6B691B06FA865F52C9484EF4F10E2E02ED6D7C3A3F474B8B138A33AF7258B2A9\nParentProcessGuid: {0AC304CA-97D1-6976-9201-000000001A00}\nParentProcessId: 5104\nParentImage: C:\\Windows\\System32\\cmd.exe\nParentCommandLine: \"cmd.exe\" /c netsh wlan show profile * key=clear\nParentUser: DESKTOP-K1Q1TJA\\Administrator"
+  ],
+  "process.args": [
+    "netsh",
+    "wlan",
+    "show",
+    "profile",
+    "*",
+    "key=clear"
+  ],
+  "process.args_count": [
+    6
+  ],
+  "process.command_line": [
+    "netsh  wlan show profile * key=clear"
+  ],
+  "process.command_line.text": [
+    "netsh  wlan show profile * key=clear"
+  ],
+  "process.entity_id": [
+    "{0AC304CA-97D1-6976-9401-000000001A00}"
+  ],
+  "process.executable": [
+    "C:\\Windows\\System32\\netsh.exe"
+  ],
+  "process.executable.text": [
+    "C:\\Windows\\System32\\netsh.exe"
+  ],
+  "process.hash.sha256": [
+    "6b691b06fa865f52c9484ef4f10e2e02ed6d7c3a3f474b8b138a33af7258b2a9"
+  ],
+  "process.name": [
+    "netsh.exe"
+  ],
+  "process.name.text": [
+    "netsh.exe"
+  ],
+  "process.parent.args": [
+    "cmd.exe",
+    "/c",
+    "netsh",
+    "wlan",
+    "show",
+    "profile",
+    "*",
+    "key=clear"
+  ],
+  "process.parent.args_count": [
+    8
+  ],
+  "process.parent.command_line": [
+    "\"cmd.exe\" /c netsh wlan show profile * key=clear"
+  ],
+  "process.parent.command_line.text": [
+    "\"cmd.exe\" /c netsh wlan show profile * key=clear"
+  ],
+  "process.parent.entity_id": [
+    "{0AC304CA-97D1-6976-9201-000000001A00}"
+  ],
+  "process.parent.executable": [
+    "C:\\Windows\\System32\\cmd.exe"
+  ],
+  "process.parent.executable.text": [
+    "C:\\Windows\\System32\\cmd.exe"
+  ],
+  "process.parent.name": [
+    "cmd.exe"
+  ],
+  "process.parent.name.text": [
+    "cmd.exe"
+  ],
+  "process.parent.pid": [
+    5104
+  ],
+  "process.pe.company": [
+    "Microsoft Corporation"
+  ],
+  "process.pe.description": [
+    "Network Command Shell"
+  ],
+  "process.pe.file_version": [
+    "10.0.19041.1 (WinBuild.160101.0800)"
+  ],
+  "process.pe.original_file_name": [
+    "netsh.exe"
+  ],
+  "process.pe.product": [
+    "Microsoft® Windows® Operating System"
+  ],
+  "process.pid": [
+    4764
+  ],
+  "process.working_directory": [
+    "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\"
+  ],
+  "process.working_directory.text": [
+    "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\"
+  ],
+  "related.hash": [
+    "6b691b06fa865f52c9484ef4f10e2e02ed6d7c3a3f474b8b138a33af7258b2a9"
+  ],
+  "related.user": [
+    "Administrator"
+  ],
+  "user.domain": [
+    "DESKTOP-K1Q1TJA"
+  ],
+  "user.id": [
+    "S-1-5-18"
+  ],
+  "user.name": [
+    "Administrator"
+  ],
+  "user.name.text": [
+    "Administrator"
+  ],
+  "winlog.channel": [
+    "Microsoft-Windows-Sysmon/Operational"
+  ],
+  "winlog.computer_name": [
+    "DESKTOP-K1Q1TJA"
+  ],
+  "winlog.event_data.Company": [
+    "Microsoft Corporation"
+  ],
+  "winlog.event_data.Description": [
+    "Network Command Shell"
+  ],
+  "winlog.event_data.FileVersion": [
+    "10.0.19041.1 (WinBuild.160101.0800)"
+  ],
+  "winlog.event_data.IntegrityLevel": [
+    "High"
+  ],
+  "winlog.event_data.LogonGuid": [
+    "{0AC304CA-914F-6976-55D6-1B0000000000}"
+  ],
+  "winlog.event_data.LogonId": [
+    "0x1bd655"
+  ],
+  "winlog.event_data.ParentUser": [
+    "DESKTOP-K1Q1TJA\\Administrator"
+  ],
+  "winlog.event_data.Product": [
+    "Microsoft® Windows® Operating System"
+  ],
+  "winlog.event_data.TerminalSessionId": [
+    "0"
+  ],
+  "winlog.event_id": [
+    "1"
+  ],
+  "winlog.opcode": [
+    "Info"
+  ],
+  "winlog.process.pid": [
+    1172
+  ],
+  "winlog.process.thread.id": [
+    2824
+  ],
+  "winlog.provider_guid": [
+    "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}"
+  ],
+  "winlog.provider_name": [
+    "Microsoft-Windows-Sysmon"
+  ],
+  "winlog.record_id": [
+    "19841"
+  ],
+  "winlog.task": [
+    "Process Create (rule: ProcessCreate)"
+  ],
+  "winlog.user.domain": [
+    "NT AUTHORITY"
+  ],
+  "winlog.user.identifier": [
+    "S-1-5-18"
+  ],
+  "winlog.user.name": [
+    "SYSTEM"
+  ],
+  "winlog.user.type": [
+    "User"
+  ],
+  "winlog.version": [
+    5
+  ],
+  "_id": "cFxB95sBjf6dOK1UNW1y",
+  "_index": ".ds-winlogbeat-9.2.3-2026.01.19-000001",
+  "_score": null
+}

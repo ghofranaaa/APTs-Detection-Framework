@@ -1,0 +1,39 @@
+title: Change Default File Association for HTA Files
+id: 9b3a7c6e-hta-assoc-1546-001
+status: experimental
+description: >
+  Detects modification of the default file association for .hta files,
+  which may indicate persistence via Event Triggered Execution (T1546.001).
+references:
+  - https://attack.mitre.org/techniques/T1546/001/
+  - https://github.com/redcanaryco/atomic-red-team
+author: Ghofrane Amemi
+date: 2026-01-22
+tags:
+  - attack.persistence
+  - attack.t1546
+  - attack.t1546.001
+  - atomic_red_team
+
+logsource:
+  product: windows
+  category: process_creation
+  service: sysmon
+
+detection:
+  selection_cmd:
+    Image|endswith: '\cmd.exe'
+    CommandLine|contains:
+      - 'assoc'
+      - '.hta='
+  selection_parent:
+    ParentImage|endswith: '\wsmprovhost.exe'  
+
+
+  condition: selection_cmd and selection_parent
+
+falsepositives:
+  - Rare system administration activity
+  - Legacy application configuration
+
+level: high

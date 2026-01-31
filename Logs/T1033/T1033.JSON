@@ -1,0 +1,362 @@
+{
+  "@timestamp": [
+    "2026-01-26T15:08:06.028Z"
+  ],
+  "agent.ephemeral_id": [
+    "8064d8d8-ae6e-4fd1-9ace-be2c16556c19"
+  ],
+  "agent.hostname": [
+    "DESKTOP-K1Q1TJA"
+  ],
+  "agent.id": [
+    "512c112d-258f-4727-8888-40932f893567"
+  ],
+  "agent.name": [
+    "DESKTOP-K1Q1TJA"
+  ],
+  "agent.type": [
+    "winlogbeat"
+  ],
+  "agent.version": [
+    "9.2.3"
+  ],
+  "ecs.version": [
+    "8.17.0"
+  ],
+  "event.action": [
+    "Process creation"
+  ],
+  "event.category": [
+    "process"
+  ],
+  "event.code": [
+    "1"
+  ],
+  "event.created": [
+    "2026-01-26T15:08:07.049Z"
+  ],
+  "event.ingested": [
+    "2026-01-26T15:08:17.108Z"
+  ],
+  "event.kind": [
+    "event"
+  ],
+  "event.module": [
+    "sysmon"
+  ],
+  "event.provider": [
+    "Microsoft-Windows-Sysmon"
+  ],
+  "event.type": [
+    "start"
+  ],
+  "host.architecture": [
+    "x86_64"
+  ],
+  "host.hostname": [
+    "DESKTOP-K1Q1TJA"
+  ],
+  "host.id": [
+    "0ac304ca-bfd2-429e-ac83-581c50bd0b8a"
+  ],
+  "host.ip": [
+    "2c0f:f290:3000:e86c:5f0d:1176:22ae:92fd",
+    "2c0f:f290:3000:e86c:4c67:7109:41be:e7d2",
+    "fe80::4243:cfcf:9490:30b1",
+    "172.20.10.4"
+  ],
+  "host.mac": [
+    "08-00-27-C1-A5-1D"
+  ],
+  "host.name": [
+    "desktop-k1q1tja"
+  ],
+  "host.os.build": [
+    "19045.6466"
+  ],
+  "host.os.family": [
+    "windows"
+  ],
+  "host.os.kernel": [
+    "10.0.19041.6456 (WinBuild.160101.0800)"
+  ],
+  "host.os.name": [
+    "Windows 10 Home"
+  ],
+  "host.os.name.text": [
+    "Windows 10 Home"
+  ],
+  "host.os.platform": [
+    "windows"
+  ],
+  "host.os.type": [
+    "windows"
+  ],
+  "host.os.version": [
+    "10.0"
+  ],
+  "log.level": [
+    "information"
+  ],
+  "message": [
+    "Process Create:\nRuleName: -\nUtcTime: 2026-01-26 15:08:06.028\nProcessGuid: {0AC304CA-8356-6977-9D02-000000001B00}\nProcessId: 3704\nImage: C:\\Windows\\System32\\cmd.exe\nFileVersion: 10.0.19041.4355 (WinBuild.160101.0800)\nDescription: Windows Command Processor\nProduct: Microsoft® Windows® Operating System\nCompany: Microsoft Corporation\nOriginalFileName: Cmd.Exe\nCommandLine: cmd.exe  /C whoami \nCurrentDirectory: C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\\nUser: DESKTOP-K1Q1TJA\\Administrator\nLogonGuid: {0AC304CA-7B1D-6977-B0C5-500000000000}\nLogonId: 0x50c5b0\nTerminalSessionId: 0\nIntegrityLevel: High\nHashes: SHA256=BADF4752413CB0CBDC03FB95820CA167F0CDC63B597CCDB5EF43111180E088B0\nParentProcessGuid: {0AC304CA-8355-6977-9B02-000000001B00}\nParentProcessId: 3780\nParentImage: C:\\Windows\\System32\\cmd.exe\nParentCommandLine: \"cmd.exe\" /c cmd.exe /C whoami & wmic useraccount get /ALL & quser /SERVER:\"localhost\" & quser & qwinsta.exe /server:localhost & qwinsta.exe & for /F \"tokens=1,2\" %i in ('qwinsta /server:localhost ^| findstr \"Active Disc\"') do @echo %i | find /v \"#\" | find /v \"console\" || echo %j > computers.txt & @FOR /F %n in (computers.txt) DO @FOR /F \"tokens=1,2\" %i in ('qwinsta /server:%n ^| findstr \"Active Disc\"') do @echo %i | find /v \"#\" | find /v \"console\" || echo %j > usernames.txt\nParentUser: DESKTOP-K1Q1TJA\\Administrator"
+  ],
+  "process.args": [
+    "cmd.exe",
+    "/C",
+    "whoami"
+  ],
+  "process.args_count": [
+    3
+  ],
+  "process.command_line": [
+    "cmd.exe  /C whoami "
+  ],
+  "process.command_line.text": [
+    "cmd.exe  /C whoami "
+  ],
+  "process.entity_id": [
+    "{0AC304CA-8356-6977-9D02-000000001B00}"
+  ],
+  "process.executable": [
+    "C:\\Windows\\System32\\cmd.exe"
+  ],
+  "process.executable.text": [
+    "C:\\Windows\\System32\\cmd.exe"
+  ],
+  "process.hash.sha256": [
+    "badf4752413cb0cbdc03fb95820ca167f0cdc63b597ccdb5ef43111180e088b0"
+  ],
+  "process.name": [
+    "cmd.exe"
+  ],
+  "process.name.text": [
+    "cmd.exe"
+  ],
+  "process.parent.args": [
+    "cmd.exe",
+    "/c",
+    "cmd.exe",
+    "/C",
+    "whoami",
+    "&",
+    "wmic",
+    "useraccount",
+    "get",
+    "/ALL",
+    "&",
+    "quser",
+    "/SERVER:localhost",
+    "&",
+    "quser",
+    "&",
+    "qwinsta.exe",
+    "/server:localhost",
+    "&",
+    "qwinsta.exe",
+    "&",
+    "for",
+    "/F",
+    "tokens=1,2",
+    "%i",
+    "in",
+    "('qwinsta",
+    "/server:localhost",
+    "^|",
+    "findstr",
+    "Active Disc')",
+    "do",
+    "@echo",
+    "%i",
+    "|",
+    "find",
+    "/v",
+    "#",
+    "|",
+    "find",
+    "/v",
+    "console",
+    "||",
+    "echo",
+    "%j",
+    ">",
+    "computers.txt",
+    "&",
+    "@FOR",
+    "/F",
+    "%n",
+    "in",
+    "(computers.txt)",
+    "DO",
+    "@FOR",
+    "/F",
+    "tokens=1,2",
+    "%i",
+    "in",
+    "('qwinsta",
+    "/server:%n",
+    "^|",
+    "findstr",
+    "Active Disc')",
+    "do",
+    "@echo",
+    "%i",
+    "|",
+    "find",
+    "/v",
+    "#",
+    "|",
+    "find",
+    "/v",
+    "console",
+    "||",
+    "echo",
+    "%j",
+    ">",
+    "usernames.txt"
+  ],
+  "process.parent.args_count": [
+    80
+  ],
+  "process.parent.command_line": [
+    "\"cmd.exe\" /c cmd.exe /C whoami & wmic useraccount get /ALL & quser /SERVER:\"localhost\" & quser & qwinsta.exe /server:localhost & qwinsta.exe & for /F \"tokens=1,2\" %i in ('qwinsta /server:localhost ^| findstr \"Active Disc\"') do @echo %i | find /v \"#\" | find /v \"console\" || echo %j > computers.txt & @FOR /F %n in (computers.txt) DO @FOR /F \"tokens=1,2\" %i in ('qwinsta /server:%n ^| findstr \"Active Disc\"') do @echo %i | find /v \"#\" | find /v \"console\" || echo %j > usernames.txt"
+  ],
+  "process.parent.command_line.text": [
+    "\"cmd.exe\" /c cmd.exe /C whoami & wmic useraccount get /ALL & quser /SERVER:\"localhost\" & quser & qwinsta.exe /server:localhost & qwinsta.exe & for /F \"tokens=1,2\" %i in ('qwinsta /server:localhost ^| findstr \"Active Disc\"') do @echo %i | find /v \"#\" | find /v \"console\" || echo %j > computers.txt & @FOR /F %n in (computers.txt) DO @FOR /F \"tokens=1,2\" %i in ('qwinsta /server:%n ^| findstr \"Active Disc\"') do @echo %i | find /v \"#\" | find /v \"console\" || echo %j > usernames.txt"
+  ],
+  "process.parent.entity_id": [
+    "{0AC304CA-8355-6977-9B02-000000001B00}"
+  ],
+  "process.parent.executable": [
+    "C:\\Windows\\System32\\cmd.exe"
+  ],
+  "process.parent.executable.text": [
+    "C:\\Windows\\System32\\cmd.exe"
+  ],
+  "process.parent.name": [
+    "cmd.exe"
+  ],
+  "process.parent.name.text": [
+    "cmd.exe"
+  ],
+  "process.parent.pid": [
+    3780
+  ],
+  "process.pe.company": [
+    "Microsoft Corporation"
+  ],
+  "process.pe.description": [
+    "Windows Command Processor"
+  ],
+  "process.pe.file_version": [
+    "10.0.19041.4355 (WinBuild.160101.0800)"
+  ],
+  "process.pe.original_file_name": [
+    "Cmd.Exe"
+  ],
+  "process.pe.product": [
+    "Microsoft® Windows® Operating System"
+  ],
+  "process.pid": [
+    3704
+  ],
+  "process.working_directory": [
+    "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\"
+  ],
+  "process.working_directory.text": [
+    "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\"
+  ],
+  "related.hash": [
+    "badf4752413cb0cbdc03fb95820ca167f0cdc63b597ccdb5ef43111180e088b0"
+  ],
+  "related.user": [
+    "Administrator"
+  ],
+  "user.domain": [
+    "DESKTOP-K1Q1TJA"
+  ],
+  "user.id": [
+    "S-1-5-18"
+  ],
+  "user.name": [
+    "Administrator"
+  ],
+  "user.name.text": [
+    "Administrator"
+  ],
+  "winlog.channel": [
+    "Microsoft-Windows-Sysmon/Operational"
+  ],
+  "winlog.computer_name": [
+    "DESKTOP-K1Q1TJA"
+  ],
+  "winlog.event_data.Company": [
+    "Microsoft Corporation"
+  ],
+  "winlog.event_data.Description": [
+    "Windows Command Processor"
+  ],
+  "winlog.event_data.FileVersion": [
+    "10.0.19041.4355 (WinBuild.160101.0800)"
+  ],
+  "winlog.event_data.IntegrityLevel": [
+    "High"
+  ],
+  "winlog.event_data.LogonGuid": [
+    "{0AC304CA-7B1D-6977-B0C5-500000000000}"
+  ],
+  "winlog.event_data.LogonId": [
+    "0x50c5b0"
+  ],
+  "winlog.event_data.ParentUser": [
+    "DESKTOP-K1Q1TJA\\Administrator"
+  ],
+  "winlog.event_data.Product": [
+    "Microsoft® Windows® Operating System"
+  ],
+  "winlog.event_data.TerminalSessionId": [
+    "0"
+  ],
+  "winlog.event_id": [
+    "1"
+  ],
+  "winlog.opcode": [
+    "Info"
+  ],
+  "winlog.process.pid": [
+    2032
+  ],
+  "winlog.process.thread.id": [
+    2660
+  ],
+  "winlog.provider_guid": [
+    "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}"
+  ],
+  "winlog.provider_name": [
+    "Microsoft-Windows-Sysmon"
+  ],
+  "winlog.record_id": [
+    "21512"
+  ],
+  "winlog.task": [
+    "Process Create (rule: ProcessCreate)"
+  ],
+  "winlog.user.domain": [
+    "NT AUTHORITY"
+  ],
+  "winlog.user.identifier": [
+    "S-1-5-18"
+  ],
+  "winlog.user.name": [
+    "SYSTEM"
+  ],
+  "winlog.user.type": [
+    "User"
+  ],
+  "winlog.version": [
+    5
+  ],
+  "_id": "nVzZ-psBS-N-oiYdM6JX",
+  "_index": ".ds-winlogbeat-9.2.3-2026.01.19-000001",
+  "_score": null
+}

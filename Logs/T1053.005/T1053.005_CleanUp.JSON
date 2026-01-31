@@ -1,0 +1,301 @@
+{
+  "@timestamp": [
+    "2026-01-27T18:05:10.366Z"
+  ],
+  "agent.ephemeral_id": [
+    "e81b07f2-a2b3-470c-b9ee-a93aaf929315"
+  ],
+  "agent.hostname": [
+    "DESKTOP-K1Q1TJA"
+  ],
+  "agent.id": [
+    "512c112d-258f-4727-8888-40932f893567"
+  ],
+  "agent.name": [
+    "DESKTOP-K1Q1TJA"
+  ],
+  "agent.type": [
+    "winlogbeat"
+  ],
+  "agent.version": [
+    "9.2.3"
+  ],
+  "ecs.version": [
+    "8.17.0"
+  ],
+  "event.action": [
+    "Process creation"
+  ],
+  "event.category": [
+    "process"
+  ],
+  "event.code": [
+    "1"
+  ],
+  "event.created": [
+    "2026-01-27T18:05:11.790Z"
+  ],
+  "event.ingested": [
+    "2026-01-27T18:05:26.508Z"
+  ],
+  "event.kind": [
+    "event"
+  ],
+  "event.module": [
+    "sysmon"
+  ],
+  "event.provider": [
+    "Microsoft-Windows-Sysmon"
+  ],
+  "event.type": [
+    "start"
+  ],
+  "host.architecture": [
+    "x86_64"
+  ],
+  "host.hostname": [
+    "DESKTOP-K1Q1TJA"
+  ],
+  "host.id": [
+    "0ac304ca-bfd2-429e-ac83-581c50bd0b8a"
+  ],
+  "host.ip": [
+    "2c0f:f290:3000:e86c:5f0d:1176:22ae:92fd",
+    "2c0f:f290:3000:e86c:4d49:57ae:d544:7e91",
+    "fe80::4243:cfcf:9490:30b1",
+    "172.20.10.4"
+  ],
+  "host.mac": [
+    "08-00-27-C1-A5-1D"
+  ],
+  "host.name": [
+    "desktop-k1q1tja"
+  ],
+  "host.os.build": [
+    "19045.6466"
+  ],
+  "host.os.family": [
+    "windows"
+  ],
+  "host.os.kernel": [
+    "10.0.19041.6456 (WinBuild.160101.0800)"
+  ],
+  "host.os.name": [
+    "Windows 10 Home"
+  ],
+  "host.os.name.text": [
+    "Windows 10 Home"
+  ],
+  "host.os.platform": [
+    "windows"
+  ],
+  "host.os.type": [
+    "windows"
+  ],
+  "host.os.version": [
+    "10.0"
+  ],
+  "log.level": [
+    "information"
+  ],
+  "message": [
+    "Process Create:\nRuleName: -\nUtcTime: 2026-01-27 18:05:10.366\nProcessGuid: {0AC304CA-FE56-6978-A901-000000001E00}\nProcessId: 1792\nImage: C:\\Windows\\System32\\schtasks.exe\nFileVersion: 10.0.19041.5965 (WinBuild.160101.0800)\nDescription: Task Scheduler Configuration Tool\nProduct: Microsoft® Windows® Operating System\nCompany: Microsoft Corporation\nOriginalFileName: schtasks.exe\nCommandLine: schtasks  /delete /tn \"T1053_005_OnLogon\" /f  \nCurrentDirectory: C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\\nUser: DESKTOP-K1Q1TJA\\Administrator\nLogonGuid: {0AC304CA-F8B1-6978-2237-1F0000000000}\nLogonId: 0x1f3722\nTerminalSessionId: 0\nIntegrityLevel: High\nHashes: SHA256=2327E073DCF25AE03DC851EA0F3414980D3168FA959F42C5F77BE1381AE6C41D\nParentProcessGuid: {0AC304CA-FE55-6978-A701-000000001E00}\nParentProcessId: 7420\nParentImage: C:\\Windows\\System32\\cmd.exe\nParentCommandLine: \"cmd.exe\" /c schtasks /delete /tn \"T1053_005_OnLogon\" /f >nul 2>&1 & schtasks /delete /tn \"T1053_005_OnStartup\" /f >nul 2>&1\nParentUser: DESKTOP-K1Q1TJA\\Administrator"
+  ],
+  "process.args": [
+    "schtasks",
+    "/delete",
+    "/tn",
+    "T1053_005_OnLogon",
+    "/f"
+  ],
+  "process.args_count": [
+    5
+  ],
+  "process.command_line": [
+    "schtasks  /delete /tn \"T1053_005_OnLogon\" /f  "
+  ],
+  "process.command_line.text": [
+    "schtasks  /delete /tn \"T1053_005_OnLogon\" /f  "
+  ],
+  "process.entity_id": [
+    "{0AC304CA-FE56-6978-A901-000000001E00}"
+  ],
+  "process.executable": [
+    "C:\\Windows\\System32\\schtasks.exe"
+  ],
+  "process.executable.text": [
+    "C:\\Windows\\System32\\schtasks.exe"
+  ],
+  "process.hash.sha256": [
+    "2327e073dcf25ae03dc851ea0f3414980d3168fa959f42c5f77be1381ae6c41d"
+  ],
+  "process.name": [
+    "schtasks.exe"
+  ],
+  "process.name.text": [
+    "schtasks.exe"
+  ],
+  "process.parent.args": [
+    "cmd.exe",
+    "/c",
+    "schtasks",
+    "/delete",
+    "/tn",
+    "T1053_005_OnLogon",
+    "/f",
+    ">nul",
+    "2>&1",
+    "&",
+    "schtasks",
+    "/delete",
+    "/tn",
+    "T1053_005_OnStartup",
+    "/f",
+    ">nul",
+    "2>&1"
+  ],
+  "process.parent.args_count": [
+    17
+  ],
+  "process.parent.command_line": [
+    "\"cmd.exe\" /c schtasks /delete /tn \"T1053_005_OnLogon\" /f >nul 2>&1 & schtasks /delete /tn \"T1053_005_OnStartup\" /f >nul 2>&1"
+  ],
+  "process.parent.command_line.text": [
+    "\"cmd.exe\" /c schtasks /delete /tn \"T1053_005_OnLogon\" /f >nul 2>&1 & schtasks /delete /tn \"T1053_005_OnStartup\" /f >nul 2>&1"
+  ],
+  "process.parent.entity_id": [
+    "{0AC304CA-FE55-6978-A701-000000001E00}"
+  ],
+  "process.parent.executable": [
+    "C:\\Windows\\System32\\cmd.exe"
+  ],
+  "process.parent.executable.text": [
+    "C:\\Windows\\System32\\cmd.exe"
+  ],
+  "process.parent.name": [
+    "cmd.exe"
+  ],
+  "process.parent.name.text": [
+    "cmd.exe"
+  ],
+  "process.parent.pid": [
+    7420
+  ],
+  "process.pe.company": [
+    "Microsoft Corporation"
+  ],
+  "process.pe.description": [
+    "Task Scheduler Configuration Tool"
+  ],
+  "process.pe.file_version": [
+    "10.0.19041.5965 (WinBuild.160101.0800)"
+  ],
+  "process.pe.original_file_name": [
+    "schtasks.exe"
+  ],
+  "process.pe.product": [
+    "Microsoft® Windows® Operating System"
+  ],
+  "process.pid": [
+    1792
+  ],
+  "process.working_directory": [
+    "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\"
+  ],
+  "process.working_directory.text": [
+    "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\"
+  ],
+  "related.hash": [
+    "2327e073dcf25ae03dc851ea0f3414980d3168fa959f42c5f77be1381ae6c41d"
+  ],
+  "related.user": [
+    "Administrator"
+  ],
+  "user.domain": [
+    "DESKTOP-K1Q1TJA"
+  ],
+  "user.id": [
+    "S-1-5-18"
+  ],
+  "user.name": [
+    "Administrator"
+  ],
+  "user.name.text": [
+    "Administrator"
+  ],
+  "winlog.channel": [
+    "Microsoft-Windows-Sysmon/Operational"
+  ],
+  "winlog.computer_name": [
+    "DESKTOP-K1Q1TJA"
+  ],
+  "winlog.event_data.Company": [
+    "Microsoft Corporation"
+  ],
+  "winlog.event_data.Description": [
+    "Task Scheduler Configuration Tool"
+  ],
+  "winlog.event_data.FileVersion": [
+    "10.0.19041.5965 (WinBuild.160101.0800)"
+  ],
+  "winlog.event_data.IntegrityLevel": [
+    "High"
+  ],
+  "winlog.event_data.LogonGuid": [
+    "{0AC304CA-F8B1-6978-2237-1F0000000000}"
+  ],
+  "winlog.event_data.LogonId": [
+    "0x1f3722"
+  ],
+  "winlog.event_data.ParentUser": [
+    "DESKTOP-K1Q1TJA\\Administrator"
+  ],
+  "winlog.event_data.Product": [
+    "Microsoft® Windows® Operating System"
+  ],
+  "winlog.event_data.TerminalSessionId": [
+    "0"
+  ],
+  "winlog.event_id": [
+    "1"
+  ],
+  "winlog.opcode": [
+    "Info"
+  ],
+  "winlog.process.pid": [
+    2064
+  ],
+  "winlog.process.thread.id": [
+    2748
+  ],
+  "winlog.provider_guid": [
+    "{5770385F-C22A-43E0-BF4C-06F5698FFBD9}"
+  ],
+  "winlog.provider_name": [
+    "Microsoft-Windows-Sysmon"
+  ],
+  "winlog.record_id": [
+    "23507"
+  ],
+  "winlog.task": [
+    "Process Create (rule: ProcessCreate)"
+  ],
+  "winlog.user.domain": [
+    "NT AUTHORITY"
+  ],
+  "winlog.user.identifier": [
+    "S-1-5-18"
+  ],
+  "winlog.user.name": [
+    "SYSTEM"
+  ],
+  "winlog.user.type": [
+    "User"
+  ],
+  "winlog.version": [
+    5
+  ],
+  "_id": "nNihAJwBwCuNcS2IwN1u",
+  "_index": ".ds-winlogbeat-9.2.3-2026.01.19-000001",
+  "_score": null
+}

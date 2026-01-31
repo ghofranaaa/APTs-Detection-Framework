@@ -1,0 +1,38 @@
+title: PowerShell Download of Discovery Script to Temp Directory
+id: 8f3c2e9a-7a4e-4c9f-b2d6-9b4c6d7a1074
+status: experimental
+description: >
+  Detects PowerShell downloading a discovery script and staging it locally
+  in a temporary directory, consistent with Local Data Staging behavior.
+references:
+  - https://attack.mitre.org/techniques/T1074.001
+  - https://github.com/redcanaryco/atomic-red-team
+author: Ghofrane Amemi
+date: 2026-01-26
+tags:
+  - attack.collection
+  - attack.1074
+  - attack.t074.001
+  - atomic_red_team
+
+logsource:
+  product: windows
+  category: process_creation
+  service: sysmon
+
+detection:
+  selection_pwrsh:
+    Image|endswith: '\powershell.exe'
+    CommandLine|contains:
+      - 'Disovery.bat'
+
+  selection_parent:
+    ParentImage|endswith: '\wsmprovhost.exe'
+
+  condition: selection_pwrsh and selection_parent
+
+falsepositives:
+  - Legitimate administrative scripts downloaded via PowerShell
+  - Security testing or red team activity
+
+level: high

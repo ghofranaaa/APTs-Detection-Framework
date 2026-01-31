@@ -1,0 +1,39 @@
+title: Wi-Fi Password Extraction via Netsh
+id: f8c4d5e6-wifi-netsh-1016-002
+status: experimental
+description: >
+  Detects extraction of Wi-Fi passwords using netsh command with key=clear parameter,
+  indicating reconnaissance via System Network Configuration Discovery (T1016.002).
+references:
+  - https://attack.mitre.org/techniques/T1016/002/
+  - https://github.com/redcanaryco/atomic-red-team
+author: Ghofrane Amemi
+date: 2026-01-25
+tags:
+  - attack.discovery
+  - attack.t1016
+  - attack.t1016.002
+  - atomic_red_team
+
+logsource:
+  product: windows
+  category: process_creation
+  service: sysmon
+
+detection:
+  selection_cmd:
+    Image|endswith: '\netsh.exe.exe'
+    CommandLine|contains:
+      - 'wlan'
+      - 'key=clear'
+  selection_parent:
+    ParentImage|endswith: '\wsmprovhost.exe'  
+
+
+  condition: selection_cmd and selection_parent
+
+falsepositives:
+  - Legitimate remote administration scripts
+  - Automated deployment tools
+
+level: high

@@ -1,0 +1,38 @@
+title: Registry Modification to Hide File Extensions
+id: 9b71c1e2-t1112-hidefileext
+status: experimental
+description: >
+  Detects modification of Windows Explorer registry settings to hide file extensions,
+  a common defense evasion technique used to disguise malicious files (T1112).
+references:
+  - https://attack.mitre.org/techniques/T1112
+  - https://github.com/redcanaryco/atomic-red-team
+author: Ghofrane Amemi
+date: 2026-01-25
+tags:
+  - attack.defense_evasion
+  - attack.t1112
+  - atomic_red_team
+
+logsource:
+  product: windows
+  category: process_creation
+  service: sysmon
+
+detection:
+  selection_reg:
+    Image|endswith: '\reg.exe'
+    CommandLine|contains|all:
+      - 'add'
+      - 'HideFileExt'
+  selection_parent:
+    ParentImage|endswith: '\cmd.exe'
+
+
+  condition: selection_reg and selection_parent
+
+falsepositives:
+  - User preference changes via command line
+  - Legitimate system hardening scripts
+
+level: high

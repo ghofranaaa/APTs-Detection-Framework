@@ -1,0 +1,36 @@
+title: PowerShell XOR Encoded Data Exfiltration
+id: c3ed6d2a-t1132-001-xor-encoding
+status: experimental
+description: Detects PowerShell-based XOR encoding of data followed by outbound POST requests, consistent with encoded Command and Control communication
+    - https://attack.mitre.org/techniques/T1132/001
+    - https://github.com/redcanaryco/atomic-red-team
+author: Ghofrane Amemi
+date: 2026-01-30
+tags:
+  - attack.execution
+  - attack.t1132
+  - attack.t1132.001
+  - atomic_red_team
+
+logsource:
+  product: windows
+  category: process_creation
+  service: sysmon
+
+detection:
+  selection_powershell:
+    Image|endswith: '\powershell.exe'
+    CommandLine|contains:
+      - '-bxor'
+      - 'Invoke-WebRequest'
+      - '-Method POST'
+      - 'System.Text.Encoding'
+
+  condition: selection_powershell
+
+falsepositives:
+  - Custom PowerShell scripts performing data encoding
+  - Internal automation posting encoded payloads
+  - Security testing environments
+
+level: medium

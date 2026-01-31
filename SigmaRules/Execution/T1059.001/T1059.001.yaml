@@ -1,0 +1,37 @@
+title: Suspicious PowerShell In-Memory Execution
+id: a91d2c34-t1059-001-powershell
+status: experimental
+description: Detects suspicious PowerShell execution involving in-memory script execution and remote payload retrieval
+references:
+  - https://attack.mitre.org/techniques/T1059/001
+  - https://github.com/redcanaryco/atomic-red-team
+author: Ghofrane Amemi
+date: 2026-01-30
+tags:
+  - attack.execution
+  - attack.t1059.001
+  - atomic_red_team
+
+logsource:
+  product: windows
+  category: process_creation
+  service: sysmon
+
+detection:
+  selection_powershell:
+    Image|endswith: '\powershell.exe'
+    CommandLine|contains:
+      - 'IEX'
+      - 'Invoke-Expression'
+      - 'DownloadString'
+      - 'Net.WebClient'
+      - 'Invoke-Mimikatz'
+
+  condition: selection_powershell
+
+falsepositives:
+  - Security testing or red team exercises
+  - Advanced PowerShell automation pulling remote modules
+  - Incident response scripts executed by security teams
+
+level: high

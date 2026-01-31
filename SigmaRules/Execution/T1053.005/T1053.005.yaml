@@ -1,0 +1,40 @@
+title: Scheduled Task Creation via schtasks for Persistence or Execution
+id: b9a3c7f4-t1053-005-scheduled-task
+status: experimental
+description: Detects creation of scheduled tasks configured to execute at system startup or user logon using schtasks.exe, consistent with T1053.005 Scheduled Task.
+references:
+    - https://attack.mitre.org/techniques/T1053/005/
+    - https://github.com/redcanaryco/atomic-red-team
+author: Ghofrane Amemi
+date: 2026-01-27
+tags:
+  - attack.execution
+  - attack.t1053
+  - attack.t1059.005
+  - atomic_red_team
+
+logsource:
+  product: windows
+  category: process_creation
+  service: sysmon
+
+detection:
+  selection_schtasks:
+    Image|endswith: '\schtasks.exe'
+    CommandLine|contains:
+      - 'create'
+    CommandLine|contains|any:
+      - '/sc onlogon'
+      - '/sc onstart'
+  selection_parent:
+    ParentImage|endswith: '\cmd.exe'  
+
+
+  condition: selection_schtasks and selection_parent
+
+falsepositives:
+  - Legitimate administrative task scheduling
+  - Enterprise software creating startup tasks
+  - IT automation scripts
+
+level: high

@@ -1,0 +1,36 @@
+title: System Owner and User Discovery via Command Line
+id: 4c8a9b77-t1033-user-discovery
+status: experimental
+description: Detects cmd.exe writing and reading files in TEMP directory via remote execution
+references:
+    - https://attack.mitre.org/techniques/T1033
+    - https://github.com/redcanaryco/atomic-red-team
+author: Ghofrane Amemi
+date: 2026-01-26
+tags:
+  - attack.execution
+  - attack.t1033
+  - atomic_red_team
+
+logsource:
+  product: windows
+  category: process_creation
+  service: sysmon
+
+detection:
+  selection_cmd:
+    Image|endswith: '\cmd.exe'
+    CommandLine|contains:
+      - 'whoami'
+      - 'quser'
+      - 'wmic useraccount'
+      - 'qinsta'
+
+  condition: selection_cmd
+
+falsepositives:
+  - Legitimate system administration
+  - Helpdesk or troubleshooting activity
+  - IT inventory scripts
+
+level: medium
