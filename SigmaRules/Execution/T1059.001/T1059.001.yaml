@@ -22,10 +22,7 @@ detection:
     Image|endswith: '\powershell.exe'
     CommandLine|contains:
       - 'IEX'
-      - 'Invoke-Expression'
       - 'DownloadString'
-      - 'Net.WebClient'
-      - 'Invoke-Mimikatz'
 
   condition: selection_powershell
 

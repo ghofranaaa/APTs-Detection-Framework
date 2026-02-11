@@ -1,0 +1,36 @@
+title: Registry Run Key Persistence via reg.exe
+id: e55be3fd-t1547-001-reg-run
+status: experimental
+description: >
+  Detects the creation of user-level Run registry keys using reg.exe, a common persistence mechanism abused by attackers to execute payloads at user logon
+references:
+  - https://attack.mitre.org/techniques/T1547/001/
+  - https://github.com/redcanaryco/atomic-red-team
+author: Ghofrane Amemi
+date: 2026-02-01
+tags:
+  - attack.persistence
+  - attack.t1547
+  - attack.t1547.001
+  - atomic_red_team
+
+logsource:
+  product: windows
+  category: process_creation
+  service: sysmon
+
+detection:
+  selection_reg:
+    Image|endswith: '\reg.exe'
+    CommandLine|contains:
+      - 'HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run'
+      - 'REG ADD' 
+
+  condition: selection_reg
+
+falsepositives:
+  - Legitimate software installers
+  - Administrative startup scripts
+  - Enterprise endpoint management tools
+
+level: medium
