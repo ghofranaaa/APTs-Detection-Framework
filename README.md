@@ -165,18 +165,6 @@ evil-winrm -i <windows_ip> -u <username> -p <password>
 
 
 
-## Results & Findings
-
-> *To be completed after full testing and rule validation.*
-
-
-
-## Future Enhancements
-
-> *To be completed in later project phases.*
-
-
-
 ## Disclaimer
 
 **Educational Use Only**
